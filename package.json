@@ -1,11 +1,17 @@
 {
   "name": "@omni/plugin-api",
   "module": "index.ts",
+  "version": "0.1.1",
   "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/bun": "latest",
-    "@types/react": "^19.0.8"
+    "@types/react": "^19.0.8",
+    "husky": "^9.1.7"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
