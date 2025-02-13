@@ -1,0 +1,16 @@
+{
+  "name": "@omni/plugin-api",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest",
+    "@types/react": "^19.0.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "react": "^19.0.0"
+  }
+}
