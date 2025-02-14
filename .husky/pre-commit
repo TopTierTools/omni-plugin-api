@@ -34,9 +34,9 @@ fi
 #############################################################################################
 # Check if the version in package.json and jsr.json are the same, if not then we throw an error #
 #############################################################################################
-JSR_VERSION=$(git cat-file -p HEAD:jsr.json | grep '"version"' | sed -E 's/.*"([0-9]+\.[0-9]+\.[0-9]+)".*/\1/')
+JSR_VERSION=$(cat jsr.json | grep '"version"' | sed -E 's/.*"([0-9]+\.[0-9]+\.[0-9]+)".*/\1/')
 
 if [ "$STAGED_VERSION" != "$JSR_VERSION" ]; then
-    echo "❌ Error: Version number in package.json and jsr.json are not the same. The version in package.json is $CURRENT_VERSION. The version in jsr.json is $JSR_VERSION. Aborting."
+    echo "❌ Error: Version number in package.json and jsr.json are not the same. The version in package.json is $STAGED_VERSION. The version in jsr.json is $JSR_VERSION. Aborting."
     exit 1
 fi
