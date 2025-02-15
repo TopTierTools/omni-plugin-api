@@ -1,3 +1,4 @@
+// @ts-types="npm:@types/react"
 import type React from "react";
 type ComponentType = React.ComponentType<any>;
 export interface Omni {
